@@ -4,7 +4,7 @@
         $email = $_POST["email"];
         $message = $_POST["message"];
         
-        $to = "pulkitnarula13@gmail.com";
+        $to = "info@groupsecurity.ca";
         $subject = "Form submission";
         $headers = "From: $email\r\n";
         $headers .= "Reply-To: $email\r\n";
