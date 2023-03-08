@@ -74,7 +74,7 @@ style="display:none;visibility:hidden"></iframe></noscript>
                                 <li><a href="service-details.html">SERVICES</a>
                                 </li>
                                 <!-- <li><a href="gallery.html">CAREERS</a></li> -->
-                                <li><a href="training.html">TRAINING</a></li>
+                                <li><a target="_blank" href="http://londonsecuritytraining.ca/registration/">TRAINING</a></li>
                                 <li><a href="contact-us.html">CONTACT</a></li>
                             </ul>
                         </nav><!--// main-menu -->
@@ -104,7 +104,7 @@ style="display:none;visibility:hidden"></iframe></noscript>
                             <li><a href="service-details.html">SERVICES</a>
                             </li>
                             <!-- <li><a href="gallery.html">CAREERS</a></li> -->
-                            <li><a href="training.html">TRAINING</a></li>
+                            <li><a target="_blank" href="http://londonsecuritytraining.ca/registration/">TRAINING</a></li>
                             <li><a href="contact-us.html">CONTACT</a></li>
                         </ul>
                     </div>
@@ -262,7 +262,7 @@ style="display:none;visibility:hidden"></iframe></noscript>
                                 We have a team of highly trained and experienced security personnel who are dedicated to providing a professional and reliable service. We are committed to maintaining the highest standards of security and customer service, and we are proud to have a strong reputation in the industry.
                                 
                                 We offer a range of services including security guards, event security, CCTV monitoring, and mobile patrols. We are also able to provide custom tailored security solutions to meet the specific needs of our clients.                            </p>
-                            <a href="#" class="btn contact-btn mt-30 btn-circle">CONTACT US</a>
+                            <a href="contact-us.html" class="btn contact-btn mt-30 btn-circle">CONTACT US</a>
                         </div>
                     </div>
                 </div>
@@ -474,16 +474,22 @@ style="display:none;visibility:hidden"></iframe></noscript>
                             <h2>Request a Quote</h2>
                         </div>
                         <div class="repair-service-form">
-                            <form action="#">
+                            <form id="quote-form" action="sendquoteform.php" method="post">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <input type="text" placeholder="Name*">
+                                        <input type="text" name="company_name" id="company_name" placeholder="Company Name*">
                                     </div>
                                     <div class="col-lg-12">
-                                        <input type="text" placeholder="Subject*">
+                                        <input type="email" name="email" id="email" placeholder="Email*">
                                     </div>
                                     <div class="col-lg-12">
-                                        <textarea name="message" placeholder="Your Massege*"></textarea>
+                                        <input type="text" name="phone" id="phone" placeholder="Phone*">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" name="contact_name" id="contact_name" placeholder="Contact Name*">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea name="message" name="reason" id="reason" placeholder="Reason for the inquiry*"></textarea>
                                     </div>
                                     <div class="col-lg-12">
                                         <input type="submit" value="Submit Inquiry">
